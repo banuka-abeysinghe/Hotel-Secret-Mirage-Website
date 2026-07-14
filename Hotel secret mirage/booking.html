@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Discription" content="welcome to hotel sectet mirage">
+        <meta name="keywords" content=" hotel , hotels in mathale , mathale hotels,sri lanka hotels">
+        <link rel="stylesheet" href="./Css.css">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Booking</title>
+    
+    </head>
+
+<body>
+<header>
+    <nav id="navbar">
+        <div class="container">
+        <h1 class="logo"><a href="home.html">Hotel Secret Mirage</a></h1>
+        <ul>
+            <li><a  href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacct.html">Contact</a></li>
+            <li><a class="current" href="#">Booking</a></li>
+        </ul>
+        </div>
+
+    </nav>
+
+    <section class="bookingform">
+        <form action="payment.html" target="_blank">
+            <h2>Hotel Reservation Form</h2>
+            <br>
+    
+            <label class="form text"> <Name>Full Name</Name></label>
+            <br>
+            <input type="text" required ><br>
+    
+            <label class="form text">E-mail</label>
+            <br>
+            <input type="email" required><br>
+    
+            <label for="phone">Phone No:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+    
+            <label for="checkin">Check-In Date:</label><br>
+            <input type="date" id="checkin" name="checkin" required min="2023-09-08"><br>
+            <label for="checkout">Check-Out Date:</label><br>
+            <input type="date" id="checkout" name="checkout" required min="2023-09-09"><br>
+    
+    
+            <label class="form text">Select Room Preference</label><br>
+            <select class="roomselect" required>
+                <option value="" disabled selected>Not Selected</option>
+                <option value="JUNIORSUITE">JUNIOR SUITE</option>
+                <option value="SUPERIORSUITE">SUPERIOR SUITE</option>
+                <option value="FAMILYSUITE">FAMILY SUITE</option>
+            </select><br>
+    
+            <lable class="occupants">No of room occupants</lable><br>
+            <label id="occupants1" class="widt">Adults</label><input type="number" id="Adults" class="space" min="0" max="100" >
+             <label id="occupants2"class="widt">Children</label><input type="number" id="Children" min="0" max="100"><br>
+            
+            <br>
+            <label class="form text">Special Request</label><br>
+    
+            <textarea name="Special Request" id="tarea" cols="30" rows="10"></textarea><br>
+            <input type="submit">
+            
+    
+    
+    
+        </form>
+    </section>
+
+    <footer id="main-footer">
+        <p id="footer">hotel Secret Mirage &copy; 2020, All Right Reserved</p>
+    </footer>
+    
+</body>
+</html>
